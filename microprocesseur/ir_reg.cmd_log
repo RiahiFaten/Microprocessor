@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/hp/Desktop/Projet VHDL/microprocesseur/ir_reg.xst" -ofn "C:/Users/hp/Desktop/Projet VHDL/microprocesseur/ir_reg.syr" 

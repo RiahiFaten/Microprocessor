@@ -1,0 +1,10 @@
+[Inputs]
+clk
+raz
+load
+=data_in[15:0]=
+[Outputs]
+acc15
+accz
+[BiDir]
+=data_out[15:0]=

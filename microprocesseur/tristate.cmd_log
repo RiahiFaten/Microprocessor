@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/hp/Desktop/Projet VHDL/microprocesseur/tristate.xst" -ofn "C:/Users/hp/Desktop/Projet VHDL/microprocesseur/tristate.syr" 
+xst -intstyle ise -ifn "C:/Users/hp/Desktop/Projet VHDL/microprocesseur/tristate.xst" -ofn "C:/Users/hp/Desktop/Projet VHDL/microprocesseur/tristate.syr" 

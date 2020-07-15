@@ -1,0 +1,2 @@
+vhdtdtfi -prj microprocesseur -o "C:/Users/hp/Desktop/Projet VHDL/microprocesseur/sequenceur.vhi" -module sequenceur -template C:/Xilinx/14.6/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work up_pack.vhd -lib work sequenceur.vhdl 
+xst -intstyle ise -ifn "C:/Users/hp/Desktop/Projet VHDL/microprocesseur/sequenceur.xst" -ofn "C:/Users/hp/Desktop/Projet VHDL/microprocesseur/sequenceur.syr" 

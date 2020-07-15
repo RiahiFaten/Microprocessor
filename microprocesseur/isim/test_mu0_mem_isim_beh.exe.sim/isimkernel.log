@@ -1,0 +1,28 @@
+Command line:
+   test_mu0_mem_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56818
+
+Thu Jan 23 13:42:37 2020
+
+
+ Elaboration Time: 0.1875 sec
+
+ Current Memory Usage: 5002.17 Meg
+
+ Total Signals          : 92
+ Total Nets             : 421
+ Total Signal Drivers   : 28
+ Total Blocks           : 17
+ Total Primitive Blocks : 14
+ Total Processes        : 13
+ Total Traceable Variables  : 15
+ Total Scalar Nets and Variables : 922
+
+ Total Simulation Time: 0.203125 sec
+
+ Current Memory Usage: 5002.17 Meg
+
+Thu Jan 23 13:42:49 2020
+

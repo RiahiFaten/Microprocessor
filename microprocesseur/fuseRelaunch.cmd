@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/hp/Desktop/Projet VHDL/microprocesseur/mu0_mem_isim_beh.exe" -prj "C:/Users/hp/Desktop/Projet VHDL/microprocesseur/mu0_mem_beh.prj" "work.mu0_mem" 

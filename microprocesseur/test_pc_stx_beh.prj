@@ -1,0 +1,3 @@
+vhdl isim_temp "up_pack.vhd"
+vhdl isim_temp "pc_reg.vhdl"
+vhdl isim_temp "test_pc.vhd"

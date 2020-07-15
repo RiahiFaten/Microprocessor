@@ -1,0 +1,3 @@
+vhdtdtfi -lib work mux_A.vhd -prj microprocesseur -o mux_A.spl -module mux_A -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 mux_A.spl {C:/Users/hp/Desktop/Projet VHDL/microprocesseur/mux_A.sym} 
+xst -intstyle ise -ifn "C:/Users/hp/Desktop/Projet VHDL/microprocesseur/mux_A.xst" -ofn "C:/Users/hp/Desktop/Projet VHDL/microprocesseur/mux_A.syr" 

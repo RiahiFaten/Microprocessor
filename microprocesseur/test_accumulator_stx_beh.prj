@@ -1,0 +1,2 @@
+vhdl isim_temp "accumulator.vhdl"
+vhdl isim_temp "test_accumulator.vhd"

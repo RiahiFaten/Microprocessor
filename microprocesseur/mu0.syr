@@ -1,0 +1,630 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.38 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.39 secs
+ 
+--> Reading design: mu0.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mu0.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mu0"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : mu0
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\up_pack.vhd" into library work
+Parsing package <up_pack>.
+Parsing package body <up_pack>.
+Parsing VHDL file "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\tristate.vhdl" into library work
+Parsing entity <tristate>.
+Parsing architecture <arch_tristate> of entity <tristate>.
+Parsing VHDL file "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\sequenceur.vhdl" into library work
+Parsing entity <sequenceur>.
+Parsing architecture <arch_seq> of entity <sequenceur>.
+Parsing VHDL file "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\pc_reg.vhdl" into library work
+Parsing entity <pc_reg>.
+Parsing architecture <arch_pc_reg> of entity <pc_reg>.
+Parsing VHDL file "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\mux_B.vhd" into library work
+Parsing entity <mux_B>.
+Parsing architecture <arch_mux_B> of entity <mux_b>.
+Parsing VHDL file "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\mux_A.vhd" into library work
+Parsing entity <mux_A>.
+Parsing architecture <arch_mux_A> of entity <mux_a>.
+Parsing VHDL file "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\ir_reg.vhdl" into library work
+Parsing entity <ir_reg>.
+Parsing architecture <arch_ir_reg> of entity <ir_reg>.
+Parsing VHDL file "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\alu.vhdl" into library work
+Parsing entity <alu>.
+Parsing architecture <arch_alu> of entity <alu>.
+Parsing VHDL file "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\accumulator.vhdl" into library work
+Parsing entity <accumulator>.
+Parsing architecture <arch_acc> of entity <accumulator>.
+Parsing VHDL file "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\mu0.vhdl" into library work
+Parsing entity <mu0>.
+Parsing architecture <arch_mu0> of entity <mu0>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <mu0> (architecture <arch_mu0>) from library <work>.
+
+Elaborating entity <sequenceur> (architecture <arch_seq>) from library <work>.
+
+Elaborating entity <alu> (architecture <arch_alu>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\alu.vhdl" Line 54. Case statement is complete. others clause is never selected
+
+Elaborating entity <accumulator> (architecture <arch_acc>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\accumulator.vhdl" Line 56: data_out should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\accumulator.vhdl" Line 57: data_out should be on the sensitivity list of the process
+
+Elaborating entity <tristate> (architecture <arch_tristate>) from library <work>.
+
+Elaborating entity <pc_reg> (architecture <arch_pc_reg>) from library <work>.
+
+Elaborating entity <ir_reg> (architecture <arch_ir_reg>) from library <work>.
+
+Elaborating entity <mux_B> (architecture <arch_mux_B>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\mux_B.vhd" Line 44: e_0 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\mux_B.vhd" Line 46: e_1 should be on the sensitivity list of the process
+
+Elaborating entity <mux_A> (architecture <arch_mux_A>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\mux_A.vhd" Line 45: e_0 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\mux_A.vhd" Line 47: e_1 should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <mu0>.
+    Related source file is "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\mu0.vhdl".
+    Summary:
+	no macro.
+Unit <mu0> synthesized.
+
+Synthesizing Unit <sequenceur>.
+    Related source file is "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\sequenceur.vhdl".
+    Found 2-bit register for signal <etat_cr>.
+    Found finite state machine <FSM_0> for signal <etat_cr>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | init                                           |
+    | Power Up State     | init                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32x3-bit Read Only RAM for signal <_n0078>
+    Summary:
+	inferred   1 RAM(s).
+	inferred  20 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <sequenceur> synthesized.
+
+Synthesizing Unit <alu>.
+    Related source file is "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\alu.vhdl".
+    Found 16-bit adder for signal <A[15]_B[15]_add_0_OUT> created at line 48.
+    Found 16-bit adder for signal <B[15]_GND_9_o_add_2_OUT> created at line 50.
+    Found 16-bit subtractor for signal <A[15]_B[15]_sub_2_OUT<15:0>> created at line 49.
+    Found 16-bit 7-to-1 multiplexer for signal <S> created at line 46.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 Multiplexer(s).
+Unit <alu> synthesized.
+
+Synthesizing Unit <accumulator>.
+    Related source file is "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\accumulator.vhdl".
+    Found 16-bit register for signal <data_out>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <accumulator> synthesized.
+
+Synthesizing Unit <tristate>.
+    Related source file is "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\tristate.vhdl".
+    Found 1-bit tristate buffer for signal <data_out<15>> created at line 42
+    Found 1-bit tristate buffer for signal <data_out<14>> created at line 42
+    Found 1-bit tristate buffer for signal <data_out<13>> created at line 42
+    Found 1-bit tristate buffer for signal <data_out<12>> created at line 42
+    Found 1-bit tristate buffer for signal <data_out<11>> created at line 42
+    Found 1-bit tristate buffer for signal <data_out<10>> created at line 42
+    Found 1-bit tristate buffer for signal <data_out<9>> created at line 42
+    Found 1-bit tristate buffer for signal <data_out<8>> created at line 42
+    Found 1-bit tristate buffer for signal <data_out<7>> created at line 42
+    Found 1-bit tristate buffer for signal <data_out<6>> created at line 42
+    Found 1-bit tristate buffer for signal <data_out<5>> created at line 42
+    Found 1-bit tristate buffer for signal <data_out<4>> created at line 42
+    Found 1-bit tristate buffer for signal <data_out<3>> created at line 42
+    Found 1-bit tristate buffer for signal <data_out<2>> created at line 42
+    Found 1-bit tristate buffer for signal <data_out<1>> created at line 42
+    Found 1-bit tristate buffer for signal <data_out<0>> created at line 42
+    Summary:
+	inferred  16 Tristate(s).
+Unit <tristate> synthesized.
+
+Synthesizing Unit <pc_reg>.
+    Related source file is "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\pc_reg.vhdl".
+    Found 12-bit register for signal <data_out>.
+    Summary:
+	inferred  12 D-type flip-flop(s).
+Unit <pc_reg> synthesized.
+
+Synthesizing Unit <ir_reg>.
+    Related source file is "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\ir_reg.vhdl".
+    Found 12-bit register for signal <data_out>.
+    Found 4-bit register for signal <interne>.
+    Found 16x5-bit Read Only RAM for signal <opcode>
+    Summary:
+	inferred   1 RAM(s).
+	inferred  16 D-type flip-flop(s).
+Unit <ir_reg> synthesized.
+
+Synthesizing Unit <mux_B>.
+    Related source file is "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\mux_B.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux_B> synthesized.
+
+Synthesizing Unit <mux_A>.
+    Related source file is "C:\Users\hp\Desktop\Projet VHDL\microprocesseur\mux_A.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux_A> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x5-bit single-port Read Only RAM                    : 1
+ 32x3-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 1
+ 16-bit addsub                                         : 1
+# Registers                                            : 4
+ 12-bit register                                       : 2
+ 16-bit register                                       : 1
+ 4-bit register                                        : 1
+# Multiplexers                                         : 30
+ 1-bit 2-to-1 multiplexer                              : 10
+ 12-bit 2-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 9
+ 3-bit 2-to-1 multiplexer                              : 10
+# Tristates                                            : 16
+ 1-bit tristate buffer                                 : 16
+# FSMs                                                 : 1
+# Xors                                                 : 1
+ 16-bit xor2                                           : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <ir_reg>.
+INFO:Xst:3231 - The small RAM <Mram_opcode> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 5-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <interne>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <opcode>        |          |
+    -----------------------------------------------------------------------
+Unit <ir_reg> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sequenceur>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0078> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <opcode>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <sequenceur> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x5-bit single-port distributed Read Only RAM        : 1
+ 32x3-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 1
+ 16-bit addsub                                         : 1
+# Registers                                            : 44
+ Flip-Flops                                            : 44
+# Multiplexers                                         : 27
+ 1-bit 2-to-1 multiplexer                              : 7
+ 12-bit 2-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 9
+ 3-bit 2-to-1 multiplexer                              : 10
+# FSMs                                                 : 1
+# Xors                                                 : 1
+ 16-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <U0/FSM_0> on signal <etat_cr[1:2]> with user encoding.
+---------------------
+ State   | Encoding
+---------------------
+ init    | 00
+ fetch   | 01
+ execute | 10
+ stop    | 11
+---------------------
+
+Optimizing unit <accumulator> ...
+
+Optimizing unit <pc_reg> ...
+
+Optimizing unit <ir_reg> ...
+
+Optimizing unit <mu0> ...
+
+Optimizing unit <sequenceur> ...
+
+Optimizing unit <alu> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block mu0, actual ratio is 0.
+FlipFlop U5/interne_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 47
+ Flip-Flops                                            : 47
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : mu0.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 150
+#      LUT2                        : 5
+#      LUT3                        : 12
+#      LUT4                        : 15
+#      LUT5                        : 13
+#      LUT6                        : 72
+#      MUXCY                       : 15
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 16
+# FlipFlops/Latches                : 47
+#      FDC                         : 2
+#      FDCE                        : 12
+#      FDE                         : 5
+#      FDRE                        : 28
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 31
+#      IBUF                        : 1
+#      IOBUF                       : 16
+#      OBUF                        : 14
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              47  out of  126800     0%  
+ Number of Slice LUTs:                  117  out of  63400     0%  
+    Number used as Logic:               117  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    139
+   Number with an unused Flip Flop:      92  out of    139    66%  
+   Number with an unused LUT:            22  out of    139    15%  
+   Number of fully used LUT-FF pairs:    25  out of    139    17%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          32
+ Number of bonded IOBs:                  32  out of    210    15%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 47    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.544ns (Maximum Frequency: 282.202MHz)
+   Minimum input arrival time before clock: 3.035ns
+   Maximum output required time after clock: 2.717ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.544ns (frequency: 282.202MHz)
+  Total number of paths / destination ports: 14100 / 115
+-------------------------------------------------------------------------
+Delay:               3.544ns (Levels of Logic = 20)
+  Source:            U0/etat_cr_FSM_FFd2 (FF)
+  Destination:       U2/data_out_15 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: U0/etat_cr_FSM_FFd2 to U2/data_out_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             19   0.361   0.463  U0/etat_cr_FSM_FFd2 (U0/etat_cr_FSM_FFd2)
+     LUT2:I0->O           16   0.097   0.364  U0/Mmux_rnw111 (U0/Mmux_rnw11)
+     LUT6:I5->O           43   0.097   0.620  U0/Mmux_alufs11 (alufssig<0>)
+     LUT5:I2->O            1   0.097   0.000  U1/Mmux_S3_rs_lut<0> (U1/Mmux_S3_rs_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  U1/Mmux_S3_rs_cy<0> (U1/Mmux_S3_rs_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<1> (U1/Mmux_S3_rs_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<2> (U1/Mmux_S3_rs_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<3> (U1/Mmux_S3_rs_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<4> (U1/Mmux_S3_rs_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<5> (U1/Mmux_S3_rs_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<6> (U1/Mmux_S3_rs_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<7> (U1/Mmux_S3_rs_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<8> (U1/Mmux_S3_rs_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<9> (U1/Mmux_S3_rs_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<10> (U1/Mmux_S3_rs_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<11> (U1/Mmux_S3_rs_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<12> (U1/Mmux_S3_rs_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<13> (U1/Mmux_S3_rs_cy<13>)
+     MUXCY:CI->O           0   0.023   0.000  U1/Mmux_S3_rs_cy<14> (U1/Mmux_S3_rs_cy<14>)
+     XORCY:CI->O           1   0.370   0.295  U1/Mmux_S3_rs_xor<15> (U1/Mmux_S3_split<15>)
+     LUT6:I5->O            1   0.097   0.000  U1/Mmux_S6_split<15>1 (alu_outsig<15>)
+     FDRE:D                    0.008          U2/data_out_15
+    ----------------------------------------
+    Total                      3.544ns (1.802ns logic, 1.742ns route)
+                                       (50.9% logic, 49.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 447 / 47
+-------------------------------------------------------------------------
+Offset:              3.035ns (Levels of Logic = 21)
+  Source:            data_bus<0> (PAD)
+  Destination:       U2/data_out_15 (FF)
+  Destination Clock: clk rising
+
+  Data Path: data_bus<0> to U2/data_out_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IOBUF:IO->O           2   0.001   0.697  data_bus_0_IOBUF (N17)
+     LUT6:I0->O            1   0.097   0.295  U6/Mmux_s11_SW0 (N48)
+     LUT6:I5->O            3   0.097   0.305  U6/Mmux_s11 (muxb_outsig<0>)
+     LUT5:I4->O            1   0.097   0.000  U1/Mmux_S3_rs_lut<0> (U1/Mmux_S3_rs_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  U1/Mmux_S3_rs_cy<0> (U1/Mmux_S3_rs_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<1> (U1/Mmux_S3_rs_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<2> (U1/Mmux_S3_rs_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<3> (U1/Mmux_S3_rs_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<4> (U1/Mmux_S3_rs_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<5> (U1/Mmux_S3_rs_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<6> (U1/Mmux_S3_rs_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<7> (U1/Mmux_S3_rs_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<8> (U1/Mmux_S3_rs_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<9> (U1/Mmux_S3_rs_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<10> (U1/Mmux_S3_rs_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<11> (U1/Mmux_S3_rs_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<12> (U1/Mmux_S3_rs_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  U1/Mmux_S3_rs_cy<13> (U1/Mmux_S3_rs_cy<13>)
+     MUXCY:CI->O           0   0.023   0.000  U1/Mmux_S3_rs_cy<14> (U1/Mmux_S3_rs_cy<14>)
+     XORCY:CI->O           1   0.370   0.295  U1/Mmux_S3_rs_xor<15> (U1/Mmux_S3_split<15>)
+     LUT6:I5->O            1   0.097   0.000  U1/Mmux_S6_split<15>1 (alu_outsig<15>)
+     FDRE:D                    0.008          U2/data_out_15
+    ----------------------------------------
+    Total                      3.035ns (1.442ns logic, 1.593ns route)
+                                       (47.5% logic, 52.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 226 / 29
+-------------------------------------------------------------------------
+Offset:              2.717ns (Levels of Logic = 4)
+  Source:            U0/etat_cr_FSM_FFd2 (FF)
+  Destination:       addr_bus<11> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: U0/etat_cr_FSM_FFd2 to addr_bus<11>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             19   0.361   0.463  U0/etat_cr_FSM_FFd2 (U0/etat_cr_FSM_FFd2)
+     LUT2:I0->O           16   0.097   0.762  U0/Mmux_rnw111 (U0/Mmux_rnw11)
+     LUT6:I0->O           12   0.097   0.562  U0/Mmux_selA11 (selAsig)
+     LUT3:I0->O            1   0.097   0.279  U7/Mmux_s121 (addr_bus_9_OBUF)
+     OBUF:I->O                 0.000          addr_bus_9_OBUF (addr_bus<9>)
+    ----------------------------------------
+    Total                      2.717ns (0.652ns logic, 2.066ns route)
+                                       (24.0% logic, 76.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.544|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 42.00 secs
+Total CPU time to Xst completion: 42.45 secs
+ 
+--> 
+
+Total memory usage is 4732880 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

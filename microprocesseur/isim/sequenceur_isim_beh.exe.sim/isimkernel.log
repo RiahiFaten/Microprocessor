@@ -1,0 +1,28 @@
+Command line:
+   sequenceur_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57140
+
+Thu Jan 23 14:18:33 2020
+
+
+ Elaboration Time: 0.140625 sec
+
+ Current Memory Usage: 5159.2 Meg
+
+ Total Signals          : 17
+ Total Nets             : 17
+ Total Signal Drivers   : 12
+ Total Blocks           : 3
+ Total Primitive Blocks : 3
+ Total Processes        : 2
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 377
+
+ Total Simulation Time: 0.171875 sec
+
+ Current Memory Usage: 5001.91 Meg
+
+Thu Jan 23 14:20:05 2020
+

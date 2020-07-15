@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/hp/Desktop/Projet VHDL/microprocesseur/mux_B.xst" -ofn "C:/Users/hp/Desktop/Projet VHDL/microprocesseur/mux_B.syr" 

@@ -1,0 +1,3 @@
+vhdtdtfi -lib work accumulator.vhdl -prj microprocesseur -o accumulator.spl -module accumulator -template C:/Xilinx/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 accumulator.spl {C:/Users/hp/Desktop/Projet VHDL/microprocesseur/accumulator.sym} 
+xst -intstyle ise -ifn "C:/Users/hp/Desktop/Projet VHDL/microprocesseur/accumulator.xst" -ofn "C:/Users/hp/Desktop/Projet VHDL/microprocesseur/accumulator.syr" 

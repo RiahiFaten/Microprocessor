@@ -1,0 +1,7 @@
+[Inputs]
+sel
+=e_0[11:0]=
+=e_1[11:0]=
+[Outputs]
+=s[11:0]=
+[BiDir]
